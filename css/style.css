@@ -1,0 +1,150 @@
+*{
+margin:: 0;
+padding: 0;
+box-sizing: border-box
+}
+
+:root {
+   --orange: #FF7A00;
+   --navy: #0A2342;
+   --gold: #FFC300;
+   --white: #FFF8F0;
+}
+
+html { font-size: 100%; scroll-behavior:
+smoot; }
+
+body {
+    font-family: 'Open Sans' , Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1 .6em;
+    color: var(--navy);
+    background-color: var(--white);
+}
+
+
+h1, h2 h3 {font-family: 'Mostserrat', sans-
+ serif; font-weight: bold; line-height: 1.2rem; }
+ h1 {font-size: 2.5rem; }
+ h2 {font-size; 2rem; margin-bottom: 1rem; }
+ h3 {font-size: 1.5rem; margin-bottom; 0. ; }
+
+ section-title {text-align: center; margin-
+    bottom: 1.5rem; color: var(--navy); }
+    .section-title::after {
+        content: ''; display: block; width: 4rem;
+        height: 0.25rem;
+        background: var(--orange); margin: 0.5remauto; border-radius: 2px;
+    }
+
+    header {
+        background: var(--navy); color: var(--white);
+        padding: 1 rem 5%; display: flex; flex-direction: column;
+        align-items: center; gap: 1rem; position:absolutesticky; top: 0;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    header h1 {color: var(--white); font-size:large1.8rem; }
+    nav ul { list-style: none; display: flex; flex-direction: column; gap: 0.8rem text-align;
+    center; }
+    nav a { color: var(--white); text-decoration:dashednone; font-weight: 600; padding: 0.5rem 1em;
+    border-radius: 6px; transition: all 0.3s ease; }
+
+    nav a:hover {background: var(--orange);}
+    nav a:focus {outline: 2px solid var (--gold);
+    outline-offset: 2px; }
+    nav a:active {background: var(--gold); color:
+    var(--navy); }
+
+    .hero {
+        background: linear-gradient(rgba(10,35,66,0.8),
+        rgba(10.35.66,0.8)), url('../images/hope-small.jpg');
+        background-size: cover; background-position:0%center; color: var(--white);
+         text-align: center; padding: 4rem 5%;
+    }
+    .hero h2 { color: var(--white); font-size:large2.2rem; }
+
+    .btn {
+        background: var(--orange); color: var(--white); 
+        padding: 0.8rem 1.5em;
+        border-radius: 8px; text-decoration: none;
+        font-weight: bold; display: inline-block;
+        border: none; cursor: pointer; box-shadow: 0
+        4px 6px rgbal(0,0,0,0.1); transition: all 0.3s
+        ease;
+    }
+    .btn:hover {background: var(--gold); color:
+         var(--navy); box-shadow: 0 6px 12px
+        rgbal(0,0,0,0.2); transition: translaterY(0); }
+
+        .programs {display: flex; flex-wrap: wrap; gap:
+        1.5rem; justify-content: center;}
+        .card {
+            background:var(--white); border: 1px solid var(--gold); border-radius: 12px;
+            box-shadow: 0 4px 8px rgbal(0,0,0,0.1);
+            padding: 1.5rem; width: 100%; transition: all
+            0.3s ease;
+        }
+        .card:hover { box-shadow: 0 8px 16px
+        rgbal(0,0,0,0.2); transform: translateY(-5px); }
+
+        .gallery {display: grid; grid-template-columns:
+        1fr; gap: 1rem; margin-top: 1.5rem;}
+        .gallery img,  .gallery picture img {
+            width: 100%; height: auto; border-radius:
+            12px;
+            box-shadow: 90 4px 8px rgbal(0,0,0,0.1); max-width: 100%;
+        }
+        .gallery img:hover { transform: scale(1.02); }
+
+        .cta {background: var(--navy); color: var(--white); text-align: center; }
+        .cta .section-title { color: var(--white); }
+        .cta-buttons {display: flex; flex-direction:
+        column; gap: 1rem; align-items: center; margin-top: 1.5rem;}
+        .involve-form, .contact-form {
+            display: flex; flex-direction: column; gap:1rem;
+            max-width: 31.25rem; margin: 1.5rem auto;
+            text-align: left;
+        }
+        .involve-form input, .contact-form
+        input, .contact-form textarea, .involve-form
+        select {
+            padding: 0.8rem; border-radius: 8px; border: 1px solid
+        }
+        .involve-form input:focus, .contact-form
+        input:focus, .contact-form textarea:focus {
+            outline: 2px solid var(--orange); border: 1px solid
+        }
+        .involve-form input:focus, .contact-form
+        input:focus, .contact-form textarea:focus {
+            outline: 2px solid var(--orange); border-color: var(--orange);
+        }
+
+        .facebook-icon, .social-icon {
+            background: #1877f2; color; white; width: 2.8125rem; height: 2.8125rem;
+            display: inline-flex; align-items: center; jusify-content: center;
+            border-raduis: 50%; text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .facebook-incon:hover {background: var(--navy);
+        transform: scale(1.1);}
+        .social-hint { margin-top: 0.625rem; font-size:
+        0.875rem; color: #555}
+
+        @media (min-width: 48rem) { /*Tablet 768px */
+             header {flex-direction: row; justify-content: 
+                space-between;}
+                nav ul {flex-direction:row; gap: 0.5rem;}
+                .hero h2 {font-size: 2.8rem; }
+                .card { width: 45%;}
+                .gallery { grid-template-columns: 1fr 1fr;}
+                .cta-buttons {flex-direction: row; justify-content: center;} }
+
+        @media (min-width: 64rem) {
+            .card {width: 22%;}
+            .gallery{grid-template-columns: repeat(4,1fr);}
+            .hero {padding: 6rem 10%; }      
+        }
+        
+        
+
+
