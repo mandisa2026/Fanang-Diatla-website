@@ -1,3 +1,32 @@
+/*WATERMARK - Fanang Diatla Logo */
+body{
+   position: relative;
+   background-color: #fef9e7;
+}
+
+body::before{
+   content:"";
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: url('../pic1.jpg.jpeg');
+   /*if your logo is in root, use
+   url('pic1.jpg.jpeg') instead */
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 500px;
+   opacity: 0.07;
+   z-index: -1;
+   pointer-events: none;
+}
+
+/* if your pic1.jpg.jpeg is same folder as
+index.html, use this: */
+body::before{
+   background-image: url('Pic1.jpg.jpeg');
+}
 *{
 margin:: 0;
 padding: 0;
