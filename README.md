@@ -48,6 +48,41 @@ This website helps Fanang Diatla support vulnerable families in Moretele.
 - 2026-10-29: linked script.js to all HTML pages before </body>
 -2026-10-29: created project structure with 5 HTML pages
 -2026-10-29: created css/style.css- added base styles, flexbox, responsive breakpoints (768px, 1024px)
+
+## SEO Discussion - WEDE5020 POE
+**1. Define SEO and purpose: ** SEO is search Engine Optimization- practices to make website rank higher
+on Google. Purpose is to increase visibility so more peiple find Fanang Diatla
+when searching "Charity Morelete" or "home care Northwest".
+
+**2. How SEO improves UX and performance: ** SEO 
+requires fast loading (optimized images with 
+loading="lazy"), mobile resposive (media 
+queries 768px"), and clear navigation.
+This improves UX because users find content
+quickly and site works on all devices.
+
+**3. Benefits of SEO: ** increases organic
+traffic without paying ads, builds trust for NGO 307-945,
+helps donors/volunteers find organization, improves accessibility 
+with alt text and semantic HTML.
+
+**4. SEO techniques used: ** HTML: semantic tags
+header/nav/main/section/footer, heading
+hierarchy h1-h2, descriptive alt attributes,
+internal linking. CSS: responsive design with
+flexbox/grid, fast loading external css/
+style.css. JavaScript: form validation improves
+UX, dynamic content without page reload.
+
+**5. Purpose of meta elements: ** mate tags
+provide metadata for browsers/search engines.
+Example: meta description shows in Google
+results, Og: image for Facebook sharing, viewport
+for mobile SEO, keywords help indexing.
+implemented in all 5 pages head section.
+
+
+  
 https://[mandisa2026].github.io/fanang-diatla-website/
 
 ## GitHub Pages Link
