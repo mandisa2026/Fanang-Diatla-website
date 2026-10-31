@@ -141,6 +141,31 @@ JSON. parse(localStorage.getItem('fanangSubmissio
                    if(target)
     target.scrollIntoView({ behavior: 'smooth' });
                 }
+
+         // 5. GALLERY
+    let currentSlide = 0;
+
+    functun showSlide(index) {
+        let slide = document.querySelectorAll(".slide");
+
+        currentSlide = (index + slides. length) % slides.length;
+
+        slides.forEach(slide => {
+            slide.classList.remove("active");
+        });
+
+        slides[currentSlide].classList.add("active");
+    }
+
+    function changeSlide(direction) {
+        showSlide(currentSlide + direction);
+    }
+
+    //Automatically change pictures every 4 seconds
+    setInterval(()  => {
+        changeSlide(1);
+    }, 4000);
+            });
     });
 
         
