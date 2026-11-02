@@ -1,3 +1,24 @@
+/* FANANG DIATLA WATERMARK - FINAL FIX */
+body {
+  background-color: #fffdf5 !important;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  background-image: url('../pic1.jpg.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.09;
+  z-index: -1;
+  pointer-events: none;
+}
+
 /*WATERMARK - Fanang Diatla Logo */
 body{
   
